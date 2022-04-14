@@ -1,0 +1,89 @@
+@font-face{
+    font-family: nos;
+    src: url("Lora-VariableFont_wght.ttf");
+}
+body{
+    font-family:nos;
+    background-color:black;
+    color:white;
+    background-image: url(images/background.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-color:black;
+}
+p{
+    column-count: 2;
+}
+h1{
+    text-align:center;
+    text-decoration: underline;
+}
+a:link {
+    color: yellow;
+  }
+  a:visited {
+    color: darkred;
+  } 
+  a:hover {
+    color: purple;
+  }
+  a:active {
+    color: darkorange;
+  }
+ul{
+    background-color: black;
+    border-radius: 5px;
+}
+li{
+    color:yellow;
+}
+footer{
+    background-color:dimgray;
+    color:black;
+    border-radius:5px;
+    width:70%;
+}
+video{
+    width:500px;
+    height:700px;
+}
+button{
+    color:cyan;
+    background-color:darkblue;
+    border:2px solid lightskyblue;
+    border-radius:5px;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+    overflow:auto;
+    clear:both;
+}
+.grid1{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 2fr;
+}
+#special{
+    border:5px solid black;
+    border-radius: 8px;
+}
+/* MEDIA QUERIES */
+
+@media screen and (max-width:770px){
+    p{
+        column-count:1;
+        width:100%;
+        grid-row:1;
+    }
+    footer{
+        width:45%;
+    }
+    ul{
+        grid-row:3;
+    }
+    img{
+        grid-row:2;
+    }
+
+}
